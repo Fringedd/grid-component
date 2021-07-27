@@ -1,0 +1,153 @@
+body{
+    font-family: 'Karla', sans-serif;
+    font-size:16px;
+    padding:0;
+    margin:0;
+    min-height: 100vh;
+    background-color:hsl(218, 22%, 67%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+p,h3{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width:650px;
+    border-radius: 5px;
+}
+
+.bot{
+    display:flex;
+    align-items: center;
+}
+.left{
+    width:50%;
+    background-color:hsl(179, 62%, 37%);
+    height:17rem;
+    padding: 40px 30px;
+    border-bottom-left-radius: 5px;
+
+}
+.left span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.right2{
+    margin-left:5%;
+}
+
+.left .gray{
+    color:hsl(204, 43%, 93%);
+    font-size:1rem;
+    
+}
+.left .dollar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.left p{
+    margin: 10px 0px;
+    color:white;
+}
+.left h3{
+    color:white;
+}
+.right{
+    width: 50%;
+    height:17rem;
+    background-color: hsl(179, 51%, 51%);
+    z-index: 1;
+    color: white;
+    padding:45px 30px;
+    border-bottom-right-radius: 5px;
+}
+.right h3{
+    margin:15px 0px;
+}
+
+.top{
+    background-color: #fff;
+    height:14rem;
+    padding:30px 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.top p{
+    width: 100%;
+}
+.top h2{
+    color:hsl(179, 62%, 43%);
+}
+
+.sp-top{
+    color:hsl(71, 73%, 54%);
+    font-weight:bold;
+}
+
+.sign{
+    background-color: hsl(71, 73%, 54%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:2.5rem;
+    margin-top:10%;
+    border-radius: 5px;
+    width:90%;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+      width: 375px;
+      flex-direction: row;
+      align-items: flex-start;
+      height:1000px;
+      padding: 50px 0px;
+    }
+    .top{
+        width:100%;
+        height:30%;
+        padding:10px 10px;
+    }
+    .top h2{
+        font-size:1rem;
+    }
+    .top p{
+        font-size: 0.8rem;
+    }
+    .container{
+        width:275px;
+        height:600px;
+    }
+    .bot{
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+        padding:10px 10px;
+    }
+    .right{
+        width:100%;
+        height: 50%;
+        padding:5px 10px;
+    }
+}
+
+
